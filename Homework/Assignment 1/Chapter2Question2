@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: kevin
+ *
+ * Created on February 28, 2017, 8:32 PM
+ */
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double subtotal(95.00), tax(0.06), total_tax(tax * subtotal), total_due (subtotal + total_tax);
+
+    cout << setprecision(2) << fixed;
+        cout << left << setw(15) << "Order Subtotal:" << right << setw(1) << " $" << setw(6) << subtotal << endl;
+        cout << left << setw(15) << "Total Tax:" << right << setw(1) << " $" << setw(6) << total_tax << endl;
+        cout << left << setw(15) << "Total Due:" << right << setw(1) << " $" << setw(6) << total_due << endl;
+
+    return 0;
+}
